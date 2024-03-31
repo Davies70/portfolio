@@ -1,12 +1,11 @@
 const styles = {
-  app: { margin: 'auto', maxWidth: '80%', minHeight: '100vh' },
-  homePage: {},
+  homePage: { margin: 'auto', maxWidth: '80%', minHeight: '100vh' },
   homeContent: {
-    maxWidth: '600px',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#f5f5f5',
     textAlign: 'center',
+    padding: '20px',
   },
   heading: {
     fontSize: '2.5rem',
