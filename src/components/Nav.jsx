@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import config from '../config'
 import styled, { css } from 'styled-components'
 import IconLogo from './icons/logo'
 import IconHex from './icons/hex'
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import { useScrollDirection } from '../hooks'
+import { loaderDelay } from '../utils'
+import PropTypes from 'prop-types'
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -28,8 +32,8 @@ const StyledHeader = styled.header`
 
   @media (prefers-reduced-motion: no-preference) {
     ${(props) =>
-      props.scrollDirection === 'up' &&
-      !props.scrolledToTop &&
+      props.$scrollDirection === 'up' &&
+      !props.$scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
@@ -38,8 +42,8 @@ const StyledHeader = styled.header`
       `};
 
     ${(props) =>
-      props.scrollDirection === 'down' &&
-      !props.scrolledToTop &&
+      props.$scrollDirection === 'down' &&
+      !props.$scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
         transform: translateY(calc(var(--nav-scroll-height) * -1));
@@ -145,7 +149,32 @@ const StyledLinks = styled.div`
   }
 `
 
-const Nav = () => {
+const Nav = ({ isHome }) => {
+  const [isMounted, setIsMounted] = useState(isHome)
+  const scrollDirection = useScrollDirection('down')
+  const [scrolledToTop, setScrolledToTop] = useState(true)
+
+  const handleScroll = () => {
+    setScrolledToTop(window.scrollY < 50)
+  }
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsMounted(true)
+    }, 100)
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      clearTimeout(timeout)
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  const timeout = isHome ? loaderDelay : 0
+  const fadeClass = isHome ? 'fade' : ''
+  const fadeDownClass = isHome ? 'fadedown' : ''
+
   const Logo = (
     <div className='logo' tabIndex='-1'>
       <a href='/' aria-label='home'>
@@ -171,26 +200,62 @@ const Nav = () => {
   )
 
   return (
-    <StyledHeader>
+    <StyledHeader
+      $scrollDirection={scrollDirection}
+      $scrolledToTop={scrolledToTop}
+    >
       <StyledNav>
         <>
-          {Logo}
+          <TransitionGroup component={null}>
+            {isMounted && (
+              <CSSTransition classNames={fadeClass} timeout={timeout}>
+                <>{Logo}</>
+              </CSSTransition>
+            )}
+          </TransitionGroup>
 
           <StyledLinks>
             <ol>
-              {config.navLinks &&
-                config.navLinks.map(({ url, name }, i) => (
-                  <li key={i}>
-                    <a to={url}>{name}</a>
-                  </li>
-                ))}
+              <TransitionGroup component={null}>
+                {config.navLinks &&
+                  isMounted &&
+                  config.navLinks.map(({ url, name }, i) => (
+                    <CSSTransition
+                      key={i}
+                      classNames={fadeDownClass}
+                      timeout={timeout}
+                    >
+                      <li key={i}>
+                        <a to={url}>{name}</a>
+                      </li>
+                    </CSSTransition>
+                  ))}
+              </TransitionGroup>
             </ol>
-            <div>{ResumeLink}</div>
+            <TransitionGroup component={null}>
+              {isMounted && (
+                <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                  <div
+                    style={{
+                      transitionDelay: `${
+                        isHome ? config.navLinks.length * 100 : 0
+                      }ms`,
+                    }}
+                  >
+                    {ResumeLink}
+                  </div>
+                </CSSTransition>
+              )}
+            </TransitionGroup>
           </StyledLinks>
         </>
       </StyledNav>
     </StyledHeader>
   )
+}
+
+Nav.propTypes = {
+  isHome: PropTypes.bool,
 }
 
 export default Nav
