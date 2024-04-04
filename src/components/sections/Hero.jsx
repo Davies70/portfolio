@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import React, { useState, useEffect } from 'react'
+import { TransitionGroup } from 'react-transition-group'
 import styled from 'styled-components'
 import { navDelay, loaderDelay } from '../../utils'
-import { usePrefersReducedMotion } from '../../hooks'
+import HeroList from '../HeroList'
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -48,22 +48,19 @@ const StyledHeroSection = styled.section`
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false)
-  const prefersReducedMotion = usePrefersReducedMotion()
-
-  const nodeRef = useRef(null)
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return
-    }
-
     const timeout = setTimeout(() => setIsMounted(true), navDelay)
     return () => clearTimeout(timeout)
   }, [])
 
   const one = <h1>Hello, my name is</h1>
   const two = <h2 className='big-heading'>Davies Ajayi.</h2>
-  const three = <h3 className='big-heading'>Empowering users through seamless web experiences.</h3>
+  const three = (
+    <h3 className='big-heading'>
+      Empowering users through seamless web experiences.
+    </h3>
+  )
   const four = (
     <>
       <p>
@@ -92,27 +89,12 @@ const Hero = () => {
 
   return (
     <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
+      <TransitionGroup component={null}>
+        {isMounted &&
+          items.map((item, i) => (
+            <HeroList i={i} item={item} key={i} loaderDelay={loaderDelay} />
           ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition
-                key={i}
-                classNames='fadeup'
-                timeout={loaderDelay}
-                nodeRef={nodeRef}
-              >
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
-            ))}
-        </TransitionGroup>
-      )}
+      </TransitionGroup>
     </StyledHeroSection>
   )
 }

@@ -1,10 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
 import fonts from './fonts'
 import variables from './variables'
+import TransitionStyles from './TransitionStyles'
 
 const GlobalStyle = createGlobalStyle`
   ${fonts};
   ${variables};
+  
 
   html {
     box-sizing: border-box;
@@ -437,9 +439,8 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  .gatsby-image-outer-wrapper {
-    height: 100%;
-  }
+  ${TransitionStyles};
+
 `
 
 export default GlobalStyle

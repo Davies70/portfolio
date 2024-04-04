@@ -2,7 +2,7 @@ import { Layout } from './components'
 import styled from 'styled-components'
 // import { Hero, About, Portfolio, Contact } from './pages'
 import Hero from './components/sections/Hero'
-import { StyleSheetManager } from 'styled-components'
+import About from './components/sections/About'
 
 const StyledMainContainer = styled.main`
   counter-reset: section;
@@ -10,9 +10,10 @@ const StyledMainContainer = styled.main`
 
 function App() {
   return (
-    <Layout >
+    <Layout>
       <StyledMainContainer className='fillHeight'>
         <Hero />
+        <About />
       </StyledMainContainer>
     </Layout>
   )

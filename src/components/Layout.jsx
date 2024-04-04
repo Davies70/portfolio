@@ -52,23 +52,28 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div id='root'>
+      <div>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
           <a className='skip-to-content' href='#content'>
             Skip to Content
           </a>
-          {isLoading && isHome ? (
+          <StyledContent>
+            <Nav isHome={isHome} />
+            <Social isHome={isHome} />
+            <Email isHome={isHome} />
+            <div id='content'>{children}</div>
+          </StyledContent>
+          {/* {isLoading && isHome ? (
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>
               <Nav isHome={isHome} />
               <Social isHome={isHome} />
               <Email isHome={isHome} />
-
               <div id='content'>{children}</div>
             </StyledContent>
-          )}
+          )} */}
         </ThemeProvider>
       </div>
     </>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import config from '../config'
@@ -43,19 +43,28 @@ const StyledSocialList = styled.ul`
   }
 `
 
-const Social = ({ isHome }) => (
-  <Side isHome={isHome} orientation='left'>
-    <StyledSocialList>
-      {config.socialMedia.map(({ url, name }, i) => (
-        <li key={i}>
-          <a href={url} aria-label={name} target='_blank' rel='noreferrer'>
-            <Icon name={name} />
-          </a>
-        </li>
-      ))}
-    </StyledSocialList>
-  </Side>
-)
+const Social = ({ isHome }) => {
+  const nodeRef = useRef()
+  return (
+    <Side isHome={isHome} orientation='left' nodeRef={nodeRef}>
+      <StyledSocialList>
+        {config.socialMedia.map(({ url, name }, i) => (
+          <li key={i}>
+            <a
+              href={url}
+              aria-label={name}
+              target='_blank'
+              rel='noreferrer'
+              ref={nodeRef}
+            >
+              <Icon name={name} />
+            </a>
+          </li>
+        ))}
+      </StyledSocialList>
+    </Side>
+  )
+}
 
 Social.propTypes = {
   isHome: PropTypes.bool,

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import config from '../config'
 import styled, { css } from 'styled-components'
 import IconLogo from './icons/logo'
@@ -7,6 +7,8 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { useScrollDirection } from '../hooks'
 import { loaderDelay } from '../utils'
 import PropTypes from 'prop-types'
+import Menu from './Menu'
+import NavList from './NavList'
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -150,9 +152,12 @@ const StyledLinks = styled.div`
 `
 
 const Nav = ({ isHome }) => {
-  const [isMounted, setIsMounted] = useState(isHome)
+  const [isMounted, setIsMounted] = useState(!isHome)
   const scrollDirection = useScrollDirection('down')
   const [scrolledToTop, setScrolledToTop] = useState(true)
+  const logoRef = useRef()
+  const resumeRef = useRef()
+  const hamburgerRef = useRef()
 
   const handleScroll = () => {
     setScrolledToTop(window.scrollY < 50)
@@ -177,7 +182,7 @@ const Nav = ({ isHome }) => {
 
   const Logo = (
     <div className='logo' tabIndex='-1'>
-      <a href='/' aria-label='home'>
+      <a href='/' aria-label='home' ref={logoRef}>
         <div className='hex-container'>
           <IconHex />
         </div>
@@ -208,7 +213,11 @@ const Nav = ({ isHome }) => {
         <>
           <TransitionGroup component={null}>
             {isMounted && (
-              <CSSTransition classNames={fadeClass} timeout={timeout}>
+              <CSSTransition
+                classNames={fadeClass}
+                timeout={timeout}
+                nodeRef={logoRef}
+              >
                 <>{Logo}</>
               </CSSTransition>
             )}
@@ -220,27 +229,32 @@ const Nav = ({ isHome }) => {
                 {config.navLinks &&
                   isMounted &&
                   config.navLinks.map(({ url, name }, i) => (
-                    <CSSTransition
+                    <NavList
+                      i={i}
+                      isHome={isHome}
                       key={i}
+                      url={url}
+                      name={name}
                       classNames={fadeDownClass}
                       timeout={timeout}
-                    >
-                      <li key={i}>
-                        <a to={url}>{name}</a>
-                      </li>
-                    </CSSTransition>
+                    />
                   ))}
               </TransitionGroup>
             </ol>
             <TransitionGroup component={null}>
               {isMounted && (
-                <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                <CSSTransition
+                  classNames={fadeDownClass}
+                  timeout={timeout}
+                  nodeRef={resumeRef}
+                >
                   <div
                     style={{
                       transitionDelay: `${
                         isHome ? config.navLinks.length * 100 : 0
                       }ms`,
                     }}
+                    ref={resumeRef}
                   >
                     {ResumeLink}
                   </div>
@@ -248,6 +262,17 @@ const Nav = ({ isHome }) => {
               )}
             </TransitionGroup>
           </StyledLinks>
+          <TransitionGroup component={null}>
+            {isMounted && (
+              <CSSTransition
+                classNames={fadeClass}
+                timeout={timeout}
+                nodeRef={hamburgerRef}
+              >
+                <Menu hamburgerRef={hamburgerRef} />
+              </CSSTransition>
+            )}
+          </TransitionGroup>
         </>
       </StyledNav>
     </StyledHeader>

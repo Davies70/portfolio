@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import config from '../config'
@@ -35,13 +35,19 @@ const StyledLinkWrapper = styled.div`
   }
 `
 
-const Email = ({ isHome }) => (
-  <Side isHome={isHome} orientation='right'>
-    <StyledLinkWrapper>
-      <a href={`mailto:${config.email}`}>{config.email}</a>
-    </StyledLinkWrapper>
-  </Side>
-)
+const Email = ({ isHome }) => {
+  const nodeRef = useRef()
+
+  return (
+    <Side isHome={isHome} orientation='right' nodeRef={nodeRef}>
+      <StyledLinkWrapper>
+        <a href={`mailto:${config.email}`} ref={nodeRef}>
+          {config.email}
+        </a>
+      </StyledLinkWrapper>
+    </Side>
+  )
+}
 
 Email.propTypes = {
   isHome: PropTypes.bool,
