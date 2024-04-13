@@ -1,4 +1,4 @@
-export default {
+const config = {
   email: 'brittany.chiang@gmail.com',
 
   socialMedia: [
@@ -65,3 +65,5 @@ export default {
     viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
   }),
 }
+
+export default config

@@ -47,16 +47,10 @@ const Social = ({ isHome }) => {
   const nodeRef = useRef()
   return (
     <Side isHome={isHome} orientation='left' nodeRef={nodeRef}>
-      <StyledSocialList>
+      <StyledSocialList ref={nodeRef}>
         {config.socialMedia.map(({ url, name }, i) => (
           <li key={i}>
-            <a
-              href={url}
-              aria-label={name}
-              target='_blank'
-              rel='noreferrer'
-              ref={nodeRef}
-            >
+            <a href={url} aria-label={name} target='_blank' rel='noreferrer'>
               <Icon name={name} />
             </a>
           </li>
