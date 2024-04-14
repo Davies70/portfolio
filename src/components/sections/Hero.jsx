@@ -58,19 +58,15 @@ const Hero = () => {
   const two = <h2 className='big-heading'>Davies Ajayi.</h2>
   const three = (
     <h3 className='big-heading'>
-      Empowering users through seamless web experiences.
+      Creating human-centered web apps to solve everyday problems.
     </h3>
   )
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I’m focused on
-        building accessible, human-centered products at{' '}
-        <a href='https://upstatement.com/' target='_blank' rel='noreferrer'>
-          Upstatement
-        </a>
-        .
+        I’m a software developer specializing in creating products that I would
+        actually use. Currently, I’m focused on fullstack applications with
+        seamless user experience.{' '}
       </p>
     </>
   )
@@ -81,7 +77,7 @@ const Hero = () => {
       target='_blank'
       rel='noreferrer'
     >
-      Check out my course!
+      check out my ThrillerFiend project!
     </a>
   )
 
