@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import PropTypes from 'prop-types'
 
-const NavList = ({ i, classNames, timeout, isHome, url, name, ...rest }) => {
+const NavItem = ({ i, classNames, timeout, isHome, url, name, ...rest }) => {
   const nodeRef = useRef()
   return (
     <CSSTransition
@@ -17,13 +17,13 @@ const NavList = ({ i, classNames, timeout, isHome, url, name, ...rest }) => {
         style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}
         ref={nodeRef}
       >
-        <a to={url}>{name}</a>
+        <a href={url}>{name}</a>
       </li>
     </CSSTransition>
   )
 }
 
-NavList.propTypes = {
+NavItem.propTypes = {
   i: PropTypes.number,
   classNames: PropTypes.string,
   timeout: PropTypes.number,
@@ -32,4 +32,4 @@ NavList.propTypes = {
   isHome: PropTypes.bool,
 }
 
-export default NavList
+export default NavItem

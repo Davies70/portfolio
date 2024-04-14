@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
-import fonts from './fonts'
+import Fonts from './fonts'
 import variables from './variables'
 import TransitionStyles from './TransitionStyles'
 
 const GlobalStyle = createGlobalStyle`
-  ${fonts};
+  ${Fonts};
   ${variables};
   
 

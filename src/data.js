@@ -63,7 +63,25 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/project10',
       external: 'https://project10.com',
-      title: 'Project 10',
+      title: 'Project 7',
+      tech: ['Angular', 'TypeScript'],
+    },
+    html: '<p>This is the description for Project 10.</p>',
+  },
+  {
+    frontmatter: {
+      github: 'https://github.com/project10',
+      external: 'https://project10.com',
+      title: 'Project 8',
+      tech: ['Angular', 'TypeScript'],
+    },
+    html: '<p>This is the description for Project 10.</p>',
+  },
+  {
+    frontmatter: {
+      github: 'https://github.com/project10',
+      external: 'https://project10.com',
+      title: 'Project 9',
       tech: ['Angular', 'TypeScript'],
     },
     html: '<p>This is the description for Project 10.</p>',
@@ -81,7 +99,7 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/project10',
       external: 'https://project10.com',
-      title: 'Project 10',
+      title: 'Project 11',
       tech: ['Angular', 'TypeScript'],
     },
     html: '<p>This is the description for Project 10.</p>',
@@ -90,7 +108,7 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/project10',
       external: 'https://project10.com',
-      title: 'Project 10',
+      title: 'Project 12',
       tech: ['Angular', 'TypeScript'],
     },
     html: '<p>This is the description for Project 10.</p>',
@@ -99,7 +117,7 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/project10',
       external: 'https://project10.com',
-      title: 'Project 10',
+      title: 'Project 13',
       tech: ['Angular', 'TypeScript'],
     },
     html: '<p>This is the description for Project 10.</p>',
@@ -108,7 +126,7 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/project10',
       external: 'https://project10.com',
-      title: 'Project 10',
+      title: 'Project 14',
       tech: ['Angular', 'TypeScript'],
     },
     html: '<p>This is the description for Project 10.</p>',
@@ -117,7 +135,7 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/project10',
       external: 'https://project10.com',
-      title: 'Project 10',
+      title: 'Project 15',
       tech: ['Angular', 'TypeScript'],
     },
     html: '<p>This is the description for Project 10.</p>',
@@ -126,25 +144,7 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/project10',
       external: 'https://project10.com',
-      title: 'Project 10',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 10',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 10',
+      title: 'Project 16',
       tech: ['Angular', 'TypeScript'],
     },
     html: '<p>This is the description for Project 10.</p>',

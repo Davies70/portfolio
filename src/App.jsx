@@ -4,6 +4,7 @@ import About from './components/sections/About'
 import Layout from './components/Layout'
 import Featured from './components/sections/Featured'
 import Projects from './components/sections/Projects'
+import Contact from './components/sections/Contact'
 
 const StyledMainContainer = styled.main`
   counter-reset: section;
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Featured />
         <Projects />
+        <Contact />
       </StyledMainContainer>
     </Layout>
   )

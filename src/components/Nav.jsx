@@ -8,7 +8,7 @@ import { useScrollDirection } from '../hooks'
 import { loaderDelay } from '../utils'
 import PropTypes from 'prop-types'
 import Menu from './Menu'
-import NavList from './NavList'
+import NavItem from './NavItem'
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -229,7 +229,7 @@ const Nav = ({ isHome }) => {
                 {config.navLinks &&
                   isMounted &&
                   config.navLinks.map(({ url, name }, i) => (
-                    <NavList
+                    <NavItem
                       i={i}
                       isHome={isHome}
                       key={i}

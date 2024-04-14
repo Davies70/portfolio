@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { TransitionGroup } from 'react-transition-group'
 import styled from 'styled-components'
 import config from '../../config'
 import sr from '../../utils/sr'
@@ -66,7 +65,6 @@ const Projects = () => {
   return (
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
-
       <p
         className='inline-link archive-link'
         to='/archive'
@@ -76,20 +74,23 @@ const Projects = () => {
       </p>
 
       <ul className='projects-grid'>
-        <TransitionGroup component={null}>
-          {projectsToShow &&
-            projectsToShow.map((node, i) => (
-              <Project
-                node={node}
-                i={i}
-                revealProjects={revealProjects}
-                key={i}
-              />
-            ))}
-        </TransitionGroup>
+        {projectsToShow.map((node, i) => {
+          return (
+            <Project
+              node={node}
+              i={i}
+              revealProjects={revealProjects}
+              key={i}
+            />
+          )
+        })}
       </ul>
-
-      <button className='more-button' onClick={() => setShowMore(!showMore)}>
+      <button
+        className='more-button'
+        onClick={() => {
+          setShowMore(!showMore)
+        }}
+      >
         Show {showMore ? 'Less' : 'More'}
       </button>
     </StyledProjectsSection>
