@@ -6,6 +6,7 @@ import Nav from './Nav'
 import Social from './Socials'
 import Email from './Email'
 import Loader from './Loader'
+import Head from './Head'
 
 const StyledContent = styled.div`
   display: flex;
@@ -52,6 +53,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Head />
       <div>
         <ThemeProvider theme={theme}>
           <GlobalStyle />

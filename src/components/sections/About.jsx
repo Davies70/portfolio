@@ -144,8 +144,8 @@ const About = () => {
             </p>
 
             <p>
-              Since then I have horned my skills and created a variety of web
-              applications I use often.
+              Since then, I’ve honed my skills and crafted a range of web
+              applications that I frequently utilize.
             </p>
 
             <p>
@@ -155,8 +155,7 @@ const About = () => {
               </a>{' '}
               for thriller fans to discover book suggestions, pop culture
               references, cultural impacts, and hidden easter eggs based on
-              their favorite books using GoogleBook API with Node &amp;
-              React.
+              their favorite books using GoogleBook API with Node &amp; React.
             </p>
 
             <p>A few technologies I’ve been working with recently:</p>
