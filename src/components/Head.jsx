@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet-async'
 import config from '../config'
 import appleIcon from '../images/favicons/apple-touch-icon.png'
-import manifest from '../images/favicons/site.webmanifest'
 import favicon16x16 from '../images/favicons/favicon-16x16.png'
 import favicon32x32 from '../images/favicons/favicon-32x32.png'
 
@@ -17,13 +16,7 @@ const Head = ({ title, description, image }) => {
     seamless user experience.`,
     siteUrl: 'https://daviesajayi.netlify.app/',
   }
-  const {
-    defaultTitle,
-    defaultDescription,
-    siteUrl,
-    
-    twitterUsername,
-  } = site
+  const { defaultTitle, defaultDescription, siteUrl, twitterUsername } = site
 
   const seo = {
     title: title || defaultTitle,
@@ -54,12 +47,12 @@ const Head = ({ title, description, image }) => {
       <meta name='twitter:title' content={seo.title} />
       <meta name='twitter:description' content={seo.description} />
       <meta name='twitter:image' content={seo.image} />
-      
-      <meta name='theme-color' content={config.navyColor} /> 
+
+      <meta name='theme-color' content={config.navyColor} />
       <link rel='apple-touch-icon' sizes='180x180' href={appleIcon} />
       <link rel='icon' type='image/png' sizes='32x32' href={favicon32x32} />
       <link rel='icon' type='image/png' sizes='16x16' href={favicon16x16} />
-      <link rel='manifest' href={manifest} />
+
       <meta
         name='google-site-verification'
         content='DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk'
