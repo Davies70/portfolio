@@ -15,8 +15,7 @@ const Head = ({ title, description, image }) => {
     defaultDescription: `I’m a software developer specializing in creating products that I would
     actually use. Currently, I’m focused on fullstack applications with
     seamless user experience.`,
-    siteUrl: 'https://www.example.com',
-
+    siteUrl: 'https://daviesajayi.netlify.app/',
   }
   const {
     defaultTitle,
