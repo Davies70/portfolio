@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet-async'
+import config from '../config'
 import appleIcon from '../images/favicons/apple-touch-icon.png'
 import manifest from '../images/favicons/site.webmanifest'
 import favicon16x16 from '../images/favicons/favicon-16x16.png'
@@ -11,23 +12,24 @@ const Head = ({ title, description, image }) => {
 
   const site = {
     defaultTitle: 'Davies Ajayi',
-    defaultDescription: 'Welcome to my portfolio',
+    defaultDescription: `I’m a software developer specializing in creating products that I would
+    actually use. Currently, I’m focused on fullstack applications with
+    seamless user experience.`,
     siteUrl: 'https://www.example.com',
-    defaultImage: '/images/default-image.jpg',
-    twitterUsername: '@mytwitterhandle',
+
   }
   const {
     defaultTitle,
     defaultDescription,
     siteUrl,
-    defaultImage,
+    
     twitterUsername,
   } = site
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
+    image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname}`,
   }
 
@@ -53,27 +55,8 @@ const Head = ({ title, description, image }) => {
       <meta name='twitter:title' content={seo.title} />
       <meta name='twitter:description' content={seo.description} />
       <meta name='twitter:image' content={seo.image} />
-      {/* <link rel='apple-touch-icon' sizes='57x57' href={appleIcon57x57} />
-      <link rel='apple-touch-icon' sizes='60x60' href={appleIcon60x60} />
-      <link rel='apple-touch-icon' sizes='72x72' href={appleIcon72x72} />
-      <link rel='apple-touch-icon' sizes='76x76' href={appleIcon76x76} />
-      <link rel='apple-touch-icon' sizes='114x114' href={appleIcon114x114} />
-      <link rel='apple-touch-icon' sizes='120x120' href={appleIcon120x120} />
-      <link rel='apple-touch-icon' sizes='144x144' href={appleIcon144x144} />
-      <link rel='apple-touch-icon' sizes='152x152' href={appleIcon152x152} />
-      <link rel='apple-touch-icon' sizes='180x180' href={appleIcon180x180} />
-      <link
-        rel='icon'
-        type='image/png'
-        sizes='192x192'
-        href={androidIcon192x192}
-      />
-      <link rel='icon' type='image/png' sizes='32x32' href={favicon32x32} />
-      <link rel='icon' type='image/png' sizes='96x96' href={favicon96x96} />
-      <link rel='icon' type='image/png' sizes='16x16' href={favicon16x16} />
-      <meta name='msapplication-TileColor' content={config.navyColor} />
-      <meta name='msapplication-TileImage' content={msIcon144x144} />
-      <meta name='theme-color' content={config.navyColor} /> */}
+      
+      <meta name='theme-color' content={config.navyColor} /> 
       <link rel='apple-touch-icon' sizes='180x180' href={appleIcon} />
       <link rel='icon' type='image/png' sizes='32x32' href={favicon32x32} />
       <link rel='icon' type='image/png' sizes='16x16' href={favicon16x16} />
