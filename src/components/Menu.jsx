@@ -269,7 +269,7 @@ const Menu = ({ hamburgerRef }) => {
                 <ol>
                   {config.navLinks.map(({ url, name }, i) => (
                     <li key={i}>
-                      <a to={url} onClick={() => setMenuOpen(false)}>
+                      <a href={url} onClick={() => setMenuOpen(false)}>
                         {name}
                       </a>
                     </li>
