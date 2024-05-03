@@ -190,8 +190,8 @@ export const featuredProjects = [
         title: 'Patientor',
         tech: ['TypeScript', 'React', 'Node.js'],
         github: 'https://github.com/Davies70/patientor_backend',
-        cover: './src/static/projects/Patientor.PNG',
-        cta: Cover3,
+        cover: Cover3,
+        cta: '',
       },
 
       html: '<p>Meet Patientor: A Modern Healthcare Solution.<br><br>Powered by TypeScript, React, Node.js, Express, and Material UI, Patientor simplifies healthcare management. It efficiently stores patient data, offers instant health statuses, and tracks medical checks, improving patient care workflows.</p>',
