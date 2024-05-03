@@ -163,7 +163,7 @@ export const featuredProjects = [
         github: 'https://github.com/example/project1',
         cover:
           'https://images.pexels.com/photos/20419200/pexels-photo-20419200/free-photo-of-wax-candles-and-wooden-tray.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        cta: 'https://example.com/course1',
+        cta: '',
       },
       html: '<p>This is the project description for Project 1.</p>',
     },
@@ -186,7 +186,7 @@ export const featuredProjects = [
   {
     node: {
       frontmatter: {
-        external: 'https://example.com',
+        external: 'https://patentor-backend.onrender.com/',
         title: 'Patientor',
         tech: ['TypeScript', 'React', 'Node.js'],
         github: 'https://github.com/Davies70/patientor_backend',
