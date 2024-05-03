@@ -1,4 +1,4 @@
-import Cover3 from './static/projects/Patientor.png';
+import Cover3 from './images/Patientor.png';
 
 export const projects = [
   {
