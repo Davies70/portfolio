@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const IconLogo = () => (
   <svg
@@ -28,6 +28,6 @@ const IconLogo = () => (
       </g>
     </g>
   </svg>
-)
+);
 
-export default IconLogo
+export default IconLogo;

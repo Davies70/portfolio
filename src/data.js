@@ -23,10 +23,10 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/project3',
       external: 'https://project3.com',
-      title: 'Project 3',
-      tech: ['Angular', 'JavaScript'],
+      title: 'Meet Patientor: A Modern Healthcare Solution',
+      tech: ['TypeScript', 'React', 'Node.js'],
     },
-    html: '<p>This is the description for Project 3.</p>',
+    html: `<p>Powered by TypeScript, React, Node.js, Express, and Material UI, Patientor simplifies healthcare management. It efficiently stores patient data, offers instant health statuses, and tracks medical checks, improving patient care workflows. Discover Patientor for streamlined healthcare management.</p>`,
   },
 
   {
@@ -149,7 +149,7 @@ export const projects = [
     },
     html: '<p>This is the description for Project 10.</p>',
   },
-]
+];
 
 export const featuredProjects = [
   {
@@ -185,14 +185,14 @@ export const featuredProjects = [
     node: {
       frontmatter: {
         external: 'https://example.com',
-        title: 'Project 3',
-        tech: ['Angular', 'Sass'],
-        github: 'https://github.com/example/project3',
-        cover:
-          'https://images.pexels.com/photos/16890618/pexels-photo-16890618/free-photo-of-wax-candle-near-tray-with-cup-and-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Patientor',
+        tech: ['TypeScript', 'React', 'Node.js'],
+        github: 'https://github.com/Davies70/patientor_backend',
+        cover: './src/static/projects/Patientor.PNG',
         cta: 'https://example.com/course3',
       },
-      html: '<p>This is the project description for Project 3.</p>',
+
+      html: '<p>Meet Patientor: A Modern Healthcare Solution.<br><br>Powered by TypeScript, React, Node.js, Express, and Material UI, Patientor simplifies healthcare management. It efficiently stores patient data, offers instant health statuses, and tracks medical checks, improving patient care workflows.</p>',
     },
   },
-]
+];

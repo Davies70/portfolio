@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react'
-import { featuredProjects } from '../../data'
-import styled from 'styled-components'
-import sr from '../../utils/sr'
-import config from '../../config'
-import Icon from '../icons/icon'
+import React, { useEffect, useRef } from 'react';
+import { featuredProjects } from '../../data';
+import styled from 'styled-components';
+import sr from '../../utils/sr';
+import config from '../../config';
+import Icon from '../icons/icon';
 
 const StyledProjectsGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
@@ -12,7 +12,7 @@ const StyledProjectsGrid = styled.ul`
     position: relative;
     z-index: 1;
   }
-`
+`;
 
 const StyledProject = styled.li`
   position: relative;
@@ -299,18 +299,18 @@ const StyledProject = styled.li`
       }
     }
   }
-`
+`;
 
 const Featured = () => {
-  const revealTitle = useRef(null)
-  const revealProjects = useRef([])
+  const revealTitle = useRef(null);
+  const revealProjects = useRef([]);
 
   useEffect(() => {
-    sr.reveal(revealTitle.current, config.srConfig())
+    sr.reveal(revealTitle.current, config.srConfig());
     revealProjects.current.forEach((ref, i) =>
       sr.reveal(ref, config.srConfig(i * 100))
-    )
-  }, [])
+    );
+  }, []);
 
   return (
     <section id='projects'>
@@ -320,8 +320,8 @@ const Featured = () => {
 
       <StyledProjectsGrid>
         {featuredProjects.map(({ node }, i) => {
-          const { frontmatter, html } = node
-          const { external, title, tech, github, cover, cta } = frontmatter
+          const { frontmatter, html } = node;
+          const { external, title, tech, github, cover, cta } = frontmatter;
 
           return (
             <StyledProject
@@ -380,11 +380,11 @@ const Featured = () => {
                 </a>
               </div>
             </StyledProject>
-          )
+          );
         })}
       </StyledProjectsGrid>
     </section>
-  )
-}
+  );
+};
 
-export default Featured
+export default Featured;
