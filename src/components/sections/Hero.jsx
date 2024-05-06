@@ -64,7 +64,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software developer specializing in creating products that I would
+        I’m a software developer that build products that I would
         actually use. Currently, I’m focused on fullstack applications with
         seamless user experience.{' '}
       </p>
