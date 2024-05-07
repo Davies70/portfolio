@@ -64,7 +64,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software developer that build products that I would
+        I’m a software developer building products that I would
         actually use. Currently, I’m focused on fullstack applications with
         seamless user experience.{' '}
       </p>
@@ -77,7 +77,7 @@ const Hero = () => {
       target='_blank'
       rel='noreferrer'
     >
-      check out my ThrillerFiend project!
+      Check out my ThrillerFiend project!
     </a>
   )
 
