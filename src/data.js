@@ -186,7 +186,7 @@ export const featuredProjects = [
   {
     node: {
       frontmatter: {
-        external: 'https://248wth-3001.csb.app/',
+        external: 'https://jgxmdk-3001.csb.app/',
         title: 'Patientor',
         tech: ['TypeScript', 'React', 'Node.js'],
         github: 'https://github.com/Davies70/patientor_backend',
