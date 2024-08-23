@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react'
-import styled from 'styled-components'
-import config from '../../config'
-import sr from '../../utils/sr'
-import me from '../../images/me.png'
+import React, { useEffect, useRef } from 'react';
+import styled from 'styled-components';
+import config from '../../config';
+import sr from '../../utils/sr';
+import me from '../../images/me.jpg';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -16,7 +16,7 @@ const StyledAboutSection = styled.section`
       display: block;
     }
   }
-`
+`;
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
@@ -44,7 +44,7 @@ const StyledText = styled.div`
       }
     }
   }
-`
+`;
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -110,14 +110,14 @@ const StyledPic = styled.div`
       z-index: -1;
     }
   }
-`
+`;
 
 const About = () => {
-  const revealContainer = useRef(null)
+  const revealContainer = useRef(null);
 
   useEffect(() => {
-    sr.reveal(revealContainer.current, config.srConfig())
-  }, [])
+    sr.reveal(revealContainer.current, config.srConfig());
+  }, []);
 
   const skills = [
     'JavaScript (ES6+)',
@@ -127,7 +127,7 @@ const About = () => {
     'GraphQL',
     'React Native',
     'SQL',
-  ]
+  ];
 
   return (
     <StyledAboutSection id='about' ref={revealContainer}>
@@ -173,7 +173,7 @@ const About = () => {
         </StyledPic>
       </div>
     </StyledAboutSection>
-  )
-}
+  );
+};
 
-export default About
+export default About;
