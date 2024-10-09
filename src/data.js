@@ -1,4 +1,5 @@
 import Cover3 from './images/Patientor.png';
+import Cover1 from './images/ThrillerFiend2.png';
 
 export const projects = [
   {
@@ -157,15 +158,21 @@ export const featuredProjects = [
   {
     node: {
       frontmatter: {
-        external: 'https://example.com',
-        title: 'Project 1',
-        tech: ['React', 'Styled Components'],
-        github: 'https://github.com/example/project1',
-        cover:
-          'https://images.pexels.com/photos/20419200/pexels-photo-20419200/free-photo-of-wax-candles-and-wooden-tray.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        external: 'https://thrillerfiend.netlify.app',
+        title: 'ThrillerFiend',
+        tech: [
+          'React',
+          'Material UI',
+          'firebase',
+          'firestore',
+          'Google Books API',
+          'New York Times API',
+        ],
+        github: 'https://github.com/Davies70/ThrillerFiend',
+        cover: Cover1,
         cta: '',
       },
-      html: '<p>This is the project description for Project 1.</p>',
+      html: '<p>ThrillerFiend is a React-based web app designed for thriller book enthusiasts. It allows users to discover new books through the Google Books API and stay updated on latest releases via the New York Times API. Readers can manage personal collections, rate books, add notes, and organize their reading experiences. The app also provides author information, a pop culture blog, and an advanced search feature for efficient book discovery.</p>',
     },
   },
   {
