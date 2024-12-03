@@ -73,7 +73,7 @@ const Hero = () => {
   const five = (
     <a
       className='email-link'
-      href='https://www.thrillerfiend.netlify.app'
+      href='https://thrillerfiend.netlify.app/'
       target='_blank'
       rel='noreferrer'
     >
