@@ -16,7 +16,7 @@ export const projects = [
     frontmatter: {
       github: 'https://github.com/Davies70/patientor_backend',
       external: 'https://patientorbackend-production.up.railway.app',
-      title: 'Patentor',
+      title: 'Patientor',
       tech: ['TypeScript', 'React', 'Node.js', 'Express', 'Material UI'],
     },
     html: '<p>Meet Patientor: A Modern Healthcare Solution.<br><br>Patientor simplifies healthcare management. It efficiently stores patient data, offers instant health statuses, and tracks medical checks, improving patient care workflows.</p>',
