@@ -54,7 +54,6 @@ export const featuredProjects = [
           'MongoDB',
           'FourSquare API',
           'Geolocation API',
-          'NextAuth',
           'Leaflet',
         ],
         github: 'https://github.com/Davies70/cheapbites',

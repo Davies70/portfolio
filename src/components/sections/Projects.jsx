@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react'
-import styled from 'styled-components'
-import config from '../../config'
-import sr from '../../utils/sr'
-import { projects } from '../../data'
-import Project from '../Project'
+import React, { useState, useEffect, useRef } from 'react';
+import styled from 'styled-components';
+import config from '../../config';
+import sr from '../../utils/sr';
+import { projects } from '../../data';
+import Project from '../Project';
 
 const StyledProjectsSection = styled.section`
   display: flex;
@@ -41,26 +41,26 @@ const StyledProjectsSection = styled.section`
     ${({ theme }) => theme.mixins.button};
     margin: 80px auto 0;
   }
-`
+`;
 
 const Projects = () => {
-  const [showMore, setShowMore] = useState(false)
-  const revealTitle = useRef(null)
-  const revealArchiveLink = useRef(null)
-  const revealProjects = useRef([])
+  const [showMore, setShowMore] = useState(false);
+  const revealTitle = useRef(null);
+  const revealArchiveLink = useRef(null);
+  const revealProjects = useRef([]);
 
   useEffect(() => {
-    sr.reveal(revealTitle.current, config.srConfig())
-    sr.reveal(revealArchiveLink.current, config.srConfig())
+    sr.reveal(revealTitle.current, config.srConfig());
+    sr.reveal(revealArchiveLink.current, config.srConfig());
     revealProjects.current.forEach((ref, i) =>
       sr.reveal(ref, config.srConfig(i * 100))
-    )
-  }, [])
+    );
+  }, []);
 
-  const GRID_LIMIT = 6
+  const GRID_LIMIT = 6;
 
-  const firstSix = projects.slice(0, GRID_LIMIT)
-  const projectsToShow = showMore ? projects : firstSix
+  const firstSix = projects.slice(0, GRID_LIMIT);
+  const projectsToShow = showMore ? projects : firstSix;
 
   return (
     <StyledProjectsSection>
@@ -82,19 +82,21 @@ const Projects = () => {
               revealProjects={revealProjects}
               key={i}
             />
-          )
+          );
         })}
       </ul>
-      <button
-        className='more-button'
-        onClick={() => {
-          setShowMore(!showMore)
-        }}
-      >
-        Show {showMore ? 'Less' : 'More'}
-      </button>
+      {projects.length > 6 && (
+        <button
+          className='more-button'
+          onClick={() => {
+            setShowMore(!showMore);
+          }}
+        >
+          Show {showMore ? 'Less' : 'More'}
+        </button>
+      )}
     </StyledProjectsSection>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
