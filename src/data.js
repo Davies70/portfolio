@@ -39,26 +39,6 @@ export const projects = [
     },
     html: '<p>Z-Commerce is a modern fashion e-commerce website built using React, Redux, Sass, Strapi, and Stripe. It allows users to browse and purchase the latest fashion items, manage their shopping cart, and complete transactions securely using Stripe payment processing.</p>',
   },
-
-  {
-    frontmatter: {
-      github: 'https://github.com/project6',
-      external: 'https://project6.com',
-      title: 'Project 6',
-      tech: ['React', 'JavaScript'],
-    },
-    html: '<p>This is the description for Project 6.</p>',
-  },
-
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 7',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
 ];
 
 export const featuredProjects = [
