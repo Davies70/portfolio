@@ -1,6 +1,6 @@
-import Cover3 from './images/Patientor.png';
 import Cover1 from './images/ThrillerFiend2.png';
 import Cover2 from './images/cheapbites1.png';
+import Cover4 from './images/portfolio.png';
 export const projects = [
   {
     frontmatter: {
@@ -59,69 +59,6 @@ export const projects = [
     },
     html: '<p>This is the description for Project 10.</p>',
   },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 8',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 9',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 10',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 11',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 12',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 13',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 14',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
 ];
 
 export const featuredProjects = [
@@ -176,7 +113,7 @@ export const featuredProjects = [
         title: 'Portfolio Website',
         tech: ['React', 'Styled Components', 'Anime.js'],
         github: 'https://github.com/Davies70/portfolio',
-        cover: Cover3,
+        cover: Cover4,
         cta: '',
       },
 
