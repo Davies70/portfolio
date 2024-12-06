@@ -15,7 +15,7 @@ export const projects = [
   {
     frontmatter: {
       github: 'https://github.com/Davies70/patientor_backend',
-      external: 'https://project2.com',
+      external: 'https://patientorbackend-production.up.railway.app',
       title: 'Patentor',
       tech: ['TypeScript', 'React', 'Node.js', 'Express', 'Material UI'],
     },
