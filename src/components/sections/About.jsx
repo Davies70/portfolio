@@ -122,6 +122,14 @@ const About = () => {
   const skills = [
     'JavaScript (ES6+)',
     'TypeScript',
+    'Next.js',
+    'Firebase',
+    'MongoDB',
+    'Express',
+    'Prisma',
+    'FireStore',
+    'SQLiteDatabase',
+    'NextAuth.js',
     'React',
     'Node.js',
     'GraphQL',
@@ -150,12 +158,14 @@ const About = () => {
 
             <p>
               I also recently made{' '}
-              <a href='https://www.newline.co/courses/build-a-spotify-connected-app'>
-                a web app
-              </a>{' '}
-              for thriller fans to discover book suggestions, pop culture
-              references, cultural impacts, and hidden easter eggs based on
-              their favorite books using GoogleBook API with Node &amp; React.
+              <a href='https://cheapbites.vercel.app'>a web app</a>
+              designed to help food lovers find budget-friendly dining options
+              nearby. It features interactive maps, personalized
+              recommendations, and user-generated reviews, powered by APIs like
+              FourSquare and Geoapify. Built with Next.js for the backend and
+              MongoDB for data management, CheapBites allows users to manage
+              visited locations, save favorites, and enjoy a tailored dining
+              experience.
             </p>
 
             <p>A few technologies I’ve been working with recently:</p>

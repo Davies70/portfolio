@@ -162,6 +162,7 @@ export const featuredProjects = [
         title: 'CheapBites',
         tech: [
           'NextJS',
+          'TypeScript',
           'Tailwind CSS',
           'MongoDB',
           'FourSquare API',
