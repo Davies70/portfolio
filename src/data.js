@@ -1,6 +1,6 @@
 import Cover3 from './images/Patientor.png';
 import Cover1 from './images/ThrillerFiend2.png';
-
+import Cover2 from './images/cheapbites1.png';
 export const projects = [
   {
     frontmatter: {
@@ -158,13 +158,35 @@ export const featuredProjects = [
   {
     node: {
       frontmatter: {
+        external: 'https://cheapbites.vercel.app',
+        title: 'CheapBites',
+        tech: [
+          'NextJS',
+          'Tailwind CSS',
+          'MongoDB',
+          'FourSquare API',
+          'Geolocation API',
+          'NextAuth',
+          'Leaflet',
+        ],
+        github: 'https://github.com/example/project2',
+        cover: Cover2,
+        cta: '',
+      },
+      html: '<p>CheapBites is a Next.js-powered web app that helps users find affordable dining options nearby using the FourSquare and Geolocation APIs. Featuring an interactive Leaflet map, users can adjust search radius, explore reviews, save favorite spots, and receive personalized recommendations based on dietary preferences and a fun food quiz. With secure NextAuth authentication and MongoDB for data storage, CheapBites offers a seamless and tailored experience for budget-conscious food enthusiasts.</p>',
+    },
+  },
+
+  {
+    node: {
+      frontmatter: {
         external: 'https://thrillerfiend.netlify.app',
         title: 'ThrillerFiend',
         tech: [
           'React',
           'Material UI',
-          'firebase',
-          'firestore',
+          'Firebase',
+          'Firestore',
           'Google Books API',
           'New York Times API',
         ],
@@ -173,20 +195,6 @@ export const featuredProjects = [
         cta: '',
       },
       html: '<p>ThrillerFiend is a React-based web app designed for thriller book enthusiasts. It allows users to discover new books through the Google Books API and stay updated on latest releases via the New York Times API. Readers can manage personal collections, rate books, add notes, and organize their reading experiences. The app also provides author information, a pop culture blog, and an advanced search feature for efficient book discovery.</p>',
-    },
-  },
-  {
-    node: {
-      frontmatter: {
-        external: 'https://example.com',
-        title: 'Project 2',
-        tech: ['Vue', 'Tailwind CSS'],
-        github: 'https://github.com/example/project2',
-        cover:
-          'https://images.pexels.com/photos/20838756/pexels-photo-20838756/free-photo-of-bali-s-best-hikes.jpeg',
-        cta: '',
-      },
-      html: '<p>This is the project description for Project 2.</p>',
     },
   },
 

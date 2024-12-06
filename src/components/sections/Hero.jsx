@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { TransitionGroup } from 'react-transition-group'
-import styled from 'styled-components'
-import { navDelay, loaderDelay } from '../../utils'
-import HeroList from '../HeroList'
+import React, { useState, useEffect } from 'react';
+import { TransitionGroup } from 'react-transition-group';
+import styled from 'styled-components';
+import { navDelay, loaderDelay } from '../../utils';
+import HeroList from '../HeroList';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -44,44 +44,40 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
-`
+`;
 
 const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false)
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), navDelay)
-    return () => clearTimeout(timeout)
-  }, [])
+    const timeout = setTimeout(() => setIsMounted(true), navDelay);
+    return () => clearTimeout(timeout);
+  }, []);
 
-  const one = <h1>Hello, my name is</h1>
-  const two = <h2 className='big-heading'>Davies Ajayi.</h2>
-  const three = (
-    <h3 className='big-heading'>
-      I create functional web apps.
-    </h3>
-  )
+  const one = <h1>Hello, my name is</h1>;
+  const two = <h2 className='big-heading'>Davies Ajayi.</h2>;
+  const three = <h3 className='big-heading'>I create functional web apps.</h3>;
   const four = (
     <>
       <p>
-        I’m a software developer building products that I would
-        actually use. Currently, I’m focused on fullstack applications with
-        seamless user experience.{' '}
+        I build products that I would actually use.
+        Currently, I’m focused on fullstack applications with seamless user
+        experience.{' '}
       </p>
     </>
-  )
+  );
   const five = (
     <a
       className='email-link'
-      href='https://thrillerfiend.netlify.app/'
+      href='https://cheapbites.vercel.app/'
       target='_blank'
       rel='noreferrer'
     >
-      Check out my ThrillerFiend project!
+      Check out my latest project: CheapBites!
     </a>
-  )
+  );
 
-  const items = [one, two, three, four, five]
+  const items = [one, two, three, four, five];
 
   return (
     <StyledHeroSection>
@@ -92,7 +88,7 @@ const Hero = () => {
           ))}
       </TransitionGroup>
     </StyledHeroSection>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
