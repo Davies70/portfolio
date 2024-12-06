@@ -117,7 +117,7 @@ export const featuredProjects = [
         cta: '',
       },
 
-      html: '<p>Meet Patientor: A Modern Healthcare Solution.<br><br>Powered by TypeScript, React, Node.js, Express, and Material UI, Patientor simplifies healthcare management. It efficiently stores patient data, offers instant health statuses, and tracks medical checks, improving patient care workflows.</p>',
+      html: '<p>A responsive and interactive web application developed using React for efficient component-based architecture and dynamic rendering. Styled Components ensures modular and maintainable styling, enabling consistent theming and adaptability. **Anime.js** adds smooth animations, enhancing the user experience. The site is fully responsive, offering seamless functionality and aesthetics across various devices and screen sizes.</p>',
     },
   },
 ];
