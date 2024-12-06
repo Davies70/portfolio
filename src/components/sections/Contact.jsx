@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react'
-import styled from 'styled-components'
-import config from '../../config'
-import sr from '../../utils/sr'
+import React, { useEffect, useRef } from 'react';
+import styled from 'styled-components';
+import config from '../../config';
+import sr from '../../utils/sr';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -38,14 +38,14 @@ const StyledContactSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
-`
+`;
 
 const Contact = () => {
-  const revealContainer = useRef(null)
+  const revealContainer = useRef(null);
 
   useEffect(() => {
-    sr.reveal(revealContainer.current, config.srConfig())
-  }, [])
+    sr.reveal(revealContainer.current, config.srConfig());
+  }, []);
 
   return (
     <StyledContactSection id='contact' ref={revealContainer}>
@@ -53,15 +53,13 @@ const Contact = () => {
 
       <h2 className='title'>Get In Touch</h2>
 
-      <p>
-        I am currently looking for any new opportunities and challenges.
-      </p>
+      <p>I am currently looking for new opportunities and challenges.</p>
 
       <a className='email-link' href={`mailto:${config.email}`}>
         Say Hello
       </a>
     </StyledContactSection>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -4,52 +4,40 @@ import Cover2 from './images/cheapbites1.png';
 export const projects = [
   {
     frontmatter: {
-      github: 'https://github.com/project1',
-      external: 'https://project1.com',
-      title: 'Project 1',
-      tech: ['React', 'JavaScript'],
+      github: 'https://github.com/Davies70/q_Books/',
+      external: 'https://fanciful-pastelito-176d7b.netlify.app/',
+      title: 'q_Books',
+      tech: ['HTML', 'CSS', 'JavaScript'],
     },
-    html: '<p>This is the description for Project 1.</p>',
+    html: '<p>The web app comes with a search feature that allows you to search books on Google Books in real time. Search can be performed using book titles, author names, genre. The web app also includes a day and night mode feature.</p>',
   },
 
   {
     frontmatter: {
-      github: 'https://github.com/project2',
+      github: 'https://github.com/Davies70/patientor_backend',
       external: 'https://project2.com',
-      title: 'Project 2',
-      tech: ['Vue', 'JavaScript'],
+      title: 'Patentor',
+      tech: ['TypeScript', 'React', 'Node.js', 'Express', 'Material UI'],
     },
-    html: '<p>This is the description for Project 2.</p>',
+    html: '<p>Meet Patientor: A Modern Healthcare Solution.<br><br>Patientor simplifies healthcare management. It efficiently stores patient data, offers instant health statuses, and tracks medical checks, improving patient care workflows.</p>',
   },
 
   {
     frontmatter: {
-      github: 'https://github.com/project3',
-      external: 'https://project3.com',
-      title: 'Meet Patientor: A Modern Healthcare Solution',
-      tech: ['TypeScript', 'React', 'Node.js'],
+      github: 'https://github.com/Davies70/rate-repository-app/',
+      title: 'Rate My Repository App',
+      tech: ['ReactNative'],
     },
-    html: `<p>Powered by TypeScript, React, Node.js, Express, and Material UI, Patientor simplifies healthcare management. It efficiently stores patient data, offers instant health statuses, and tracks medical checks, improving patient care workflows. Discover Patientor for streamlined healthcare management.</p>`,
+    html: `<p>RateMyRepository is a React Native app designed to simplify feedback collection for GitHub repositories. With a sleek and intuitive interface, users can explore repositories, leave ratings, and provide reviews to help developers improve their projects. The app integrates with the GitHub API to fetch repository details and offers features like sorting by ratings, managing favorite repositories, and viewing detailed analytics for repository feedback. Whether you're a developer seeking constructive input or a contributor looking to share your insights, RateMyRepository streamlines the collaboration process in the open-source community.</p>`,
   },
 
   {
     frontmatter: {
-      github: 'https://github.com/project4',
-      external: 'https://project4.com',
-      title: 'Project 4',
-      tech: ['React', 'TypeScript'],
+      github: 'https://github.com/Davies70/z-Commerce',
+      title: 'Z-Commerce',
+      tech: ['Reac', 'Redux', 'Strapi', 'Stripe'],
     },
-    html: '<p>This is the description for Project 4.</p>',
-  },
-
-  {
-    frontmatter: {
-      github: 'https://github.com/project5',
-      external: 'https://project5.com',
-      title: 'Project 5',
-      tech: ['Vue', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 5.</p>',
+    html: '<p>Z-Commerce is a modern fashion e-commerce website built using React, Redux, Sass, Strapi, and Stripe. It allows users to browse and purchase the latest fashion items, manage their shopping cart, and complete transactions securely using Stripe payment processing.</p>',
   },
 
   {
@@ -134,24 +122,6 @@ export const projects = [
     },
     html: '<p>This is the description for Project 10.</p>',
   },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 15',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
-  {
-    frontmatter: {
-      github: 'https://github.com/project10',
-      external: 'https://project10.com',
-      title: 'Project 16',
-      tech: ['Angular', 'TypeScript'],
-    },
-    html: '<p>This is the description for Project 10.</p>',
-  },
 ];
 
 export const featuredProjects = [
@@ -202,10 +172,10 @@ export const featuredProjects = [
   {
     node: {
       frontmatter: {
-        external: 'https://jgxmdk-3001.csb.app/',
-        title: 'Patientor',
-        tech: ['TypeScript', 'React', 'Node.js'],
-        github: 'https://github.com/Davies70/patientor_backend',
+        external: 'https://daviesajayi.netlify.app/',
+        title: 'Portfolio Website',
+        tech: ['React', 'Styled Components', 'Anime.js'],
+        github: 'https://github.com/Davies70/portfolio',
         cover: Cover3,
         cta: '',
       },
