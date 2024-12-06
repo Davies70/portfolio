@@ -140,7 +140,7 @@ export const featuredProjects = [
           'NextAuth',
           'Leaflet',
         ],
-        github: 'https://github.com/example/project2',
+        github: 'https://github.com/Davies70/cheapbites',
         cover: Cover2,
         cta: '',
       },
