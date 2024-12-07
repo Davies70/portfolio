@@ -123,6 +123,10 @@ const About = () => {
     'JavaScript (ES6+)',
     'TypeScript',
     'Next.js',
+    'Python',
+    'Django',
+    'C#',
+    'ASP.NET',
     'Firebase',
     'MongoDB',
     'Express',
@@ -159,7 +163,7 @@ const About = () => {
             <p>
               I also recently made{' '}
               <a href='https://cheapbites.vercel.app'>a web app</a> designed to
-              help food lovers find budget-friendly dining options nearby. 
+              help food lovers find budget-friendly dining options nearby.
             </p>
 
             <p>A few technologies I’ve been working with recently:</p>
