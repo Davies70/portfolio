@@ -139,6 +139,7 @@ const About = () => {
     'GraphQL',
     'React Native',
     'SQL',
+    'PostgreSQL',
   ];
 
   return (
