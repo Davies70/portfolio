@@ -159,12 +159,7 @@ const About = () => {
             <p>
               I also recently made{' '}
               <a href='https://cheapbites.vercel.app'>a web app</a> designed to
-              help food lovers find budget-friendly dining options nearby. It
-              features interactive maps, personalized recommendations, and
-              user-generated reviews, powered by APIs like FourSquare and
-              Geoapify. Built with Next.js for the backend and MongoDB for data
-              management, CheapBites allows users to manage visited locations,
-              save favorites, and enjoy a tailored dining experience.
+              help food lovers find budget-friendly dining options nearby. 
             </p>
 
             <p>A few technologies I’ve been working with recently:</p>
