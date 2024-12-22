@@ -133,7 +133,6 @@ const About = () => {
     'Prisma',
     'FireStore',
     'SQLiteDatabase',
-    'NextAuth.js',
     'React',
     'Angular',
     'Node.js',
