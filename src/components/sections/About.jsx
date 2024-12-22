@@ -135,6 +135,7 @@ const About = () => {
     'SQLiteDatabase',
     'NextAuth.js',
     'React',
+    'Angular',
     'Node.js',
     'GraphQL',
     'React Native',
@@ -150,15 +151,13 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              My interest in web development started back in 2022 with{' '}
-              <a href='https://www.alxafrica.com/learn/programming-development/'>
-                ALX School of Software Engineering.
-              </a>
+              My interest in web development started back in 2017, from building
+              simple websites to complex fullstack applications.
             </p>
 
             <p>
-              Since then, I’ve honed my skills and crafted a range of web
-              applications that I frequently utilize.
+              I’ve honed my skills and crafted a range of web applications that
+              I frequently utilize.
             </p>
 
             <p>
