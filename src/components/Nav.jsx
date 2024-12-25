@@ -257,7 +257,7 @@ const Nav = ({ isHome }) => {
                     ref={resumeRef}
                   >
                     {ResumeLink}
-                  </div>
+                  </div> 
                 </CSSTransition>
               )}
             </TransitionGroup>
