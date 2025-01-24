@@ -241,14 +241,14 @@ const Nav = ({ isHome }) => {
                   ))}
               </TransitionGroup>
             </ol>
-            <TransitionGroup component={null}>
+            {/* <TransitionGroup component={null}>
               {isMounted && (
                 <CSSTransition
                   classNames={fadeDownClass}
                   timeout={timeout}
                   nodeRef={resumeRef}
                 >
-                  {/* <div
+                  <div
                     style={{
                       transitionDelay: `${
                         isHome ? config.navLinks.length * 100 : 0
@@ -257,10 +257,10 @@ const Nav = ({ isHome }) => {
                     ref={resumeRef}
                   >
                     {ResumeLink}
-                  </div>  */}
+                  </div> 
                 </CSSTransition>
               )}
-            </TransitionGroup>
+            </TransitionGroup> */}
           </StyledLinks>
           <TransitionGroup component={null}>
             {isMounted && (
