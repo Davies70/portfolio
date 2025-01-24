@@ -193,16 +193,16 @@ const Nav = ({ isHome }) => {
     </div>
   )
 
-  const ResumeLink = (
-    <a
-      className='resume-button'
-      href='/resume.pdf'
-      target='_blank'
-      rel='noopener noreferrer'
-    >
-      Resume
-    </a>
-  )
+  // const ResumeLink = (
+  //   <a
+  //     className='resume-button'
+  //     href='/resume.pdf'
+  //     target='_blank'
+  //     rel='noopener noreferrer'
+  //   >
+  //     Resume
+  //   </a>
+  // )
 
   return (
     <StyledHeader
@@ -248,7 +248,7 @@ const Nav = ({ isHome }) => {
                   timeout={timeout}
                   nodeRef={resumeRef}
                 >
-                  <div
+                  {/* <div
                     style={{
                       transitionDelay: `${
                         isHome ? config.navLinks.length * 100 : 0
@@ -257,7 +257,7 @@ const Nav = ({ isHome }) => {
                     ref={resumeRef}
                   >
                     {ResumeLink}
-                  </div> 
+                  </div>  */}
                 </CSSTransition>
               )}
             </TransitionGroup>
