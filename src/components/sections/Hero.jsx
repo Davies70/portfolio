@@ -60,20 +60,19 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I build products that I would actually use.
-        Currently, I’m focused on fullstack applications with seamless user
-        experience.{' '}
+        I build products that I would actually use. Currently, I’m focused on
+        fullstack applications with seamless user experience.{' '}
       </p>
     </>
   );
   const five = (
     <a
       className='email-link'
-      href='https://cheapbites.vercel.app/'
+      href='https://shopapocalypse.netlify.app/'
       target='_blank'
       rel='noreferrer'
     >
-      Check out my latest project: CheapBites!
+      Check out my latest project: ShopApocalypse!
     </a>
   );
 

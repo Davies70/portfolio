@@ -122,24 +122,12 @@ const About = () => {
   const skills = [
     'JavaScript (ES6+)',
     'TypeScript',
+    'Node.js',
     'Next.js',
     'Python',
-    'Django',
-    'C#',
-    'ASP.NET',
-    'Firebase',
-    'MongoDB',
     'Express',
-    'Prisma',
-    'FireStore',
-    'SQLiteDatabase',
     'React',
-    'Angular',
-    'Node.js',
-    'GraphQL',
     'React Native',
-    'SQL',
-    'PostgreSQL',
   ];
 
   return (

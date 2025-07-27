@@ -1,6 +1,7 @@
 import Cover1 from './images/ThrillerFiend2.png';
 import Cover2 from './images/cheapbites1.png';
-import Cover4 from './images/portfolio.png';
+import Cover4 from './images/shopapo.png';
+
 export const projects = [
   {
     frontmatter: {
@@ -9,7 +10,7 @@ export const projects = [
       title: 'q_Books',
       tech: ['HTML', 'CSS', 'JavaScript'],
     },
-    html: '<p>The web app comes with a search feature that allows you to search books on Google Books in real time. Search can be performed using book titles, author names, genre. The web app also includes a day and night mode feature.</p>',
+    html: '<p>q_Books is a lightweight web app that lets users search books in real-time using the Google Books API. Search by title, author, or genre. It also includes a toggleable day/night reading mode for user comfort.</p>',
   },
 
   {
@@ -19,25 +20,25 @@ export const projects = [
       title: 'Patientor',
       tech: ['TypeScript', 'React', 'Node.js', 'Express', 'Material UI'],
     },
-    html: '<p>Meet Patientor: A Modern Healthcare Solution.<br><br>Patientor simplifies healthcare management. It efficiently stores patient data, offers instant health statuses, and tracks medical checks, improving patient care workflows.</p>',
+    html: '<p>Patientor is a modern healthcare management platform. It stores patient records securely, displays health summaries, and supports medical history tracking—streamlining care processes for clinics.</p>',
   },
 
   {
     frontmatter: {
       github: 'https://github.com/Davies70/rate-repository-app/',
       title: 'Rate My Repository App',
-      tech: ['ReactNative'],
+      tech: ['React Native'],
     },
-    html: `<p>RateMyRepository is a React Native app designed to simplify feedback collection for GitHub repositories. With a sleek and intuitive interface, users can explore repositories, leave ratings, and provide reviews to help developers improve their projects. The app integrates with the GitHub API to fetch repository details and offers features like sorting by ratings, managing favorite repositories, and viewing detailed analytics for repository feedback. Whether you're a developer seeking constructive input or a contributor looking to share your insights, RateMyRepository streamlines the collaboration process in the open-source community.</p>`,
+    html: `<p>RateMyRepository is a React Native app for rating and reviewing GitHub repositories. It fetches repo data using GitHub’s API and offers sorting, review analytics, and a polished interface for feedback-driven collaboration.</p>`,
   },
 
   {
     frontmatter: {
       github: 'https://github.com/Davies70/z-Commerce',
       title: 'Z-Commerce',
-      tech: ['Reac', 'Redux', 'Strapi', 'Stripe'],
+      tech: ['React', 'Redux', 'Strapi', 'Stripe'],
     },
-    html: '<p>Z-Commerce is a modern fashion e-commerce website built using React, Redux, Sass, Strapi, and Stripe. It allows users to browse and purchase the latest fashion items, manage their shopping cart, and complete transactions securely using Stripe payment processing.</p>',
+    html: '<p>Z-Commerce is a sleek fashion e-commerce site built with React and Strapi. Users can browse collections, manage carts, and securely checkout using Stripe. Styled with Sass and fully responsive.</p>',
   },
 ];
 
@@ -60,7 +61,7 @@ export const featuredProjects = [
         cover: Cover2,
         cta: '',
       },
-      html: '<p>CheapBites is a Next.js-powered web app that helps users find affordable dining options nearby using the FourSquare and Geolocation APIs. Featuring an interactive Leaflet map, users can adjust search radius, explore reviews, save favorite spots, and receive personalized recommendations based on dietary preferences and a fun food quiz. With secure NextAuth authentication and MongoDB for data storage, CheapBites offers a seamless and tailored experience for budget-conscious food enthusiasts.</p>',
+      html: '<p>CheapBites helps users find affordable restaurants nearby using FourSquare and the Geolocation API. It features a dynamic Leaflet map, dietary-based suggestions, reviews, and a food quiz. Built with Next.js and secured via NextAuth.</p>',
     },
   },
 
@@ -81,22 +82,21 @@ export const featuredProjects = [
         cover: Cover1,
         cta: '',
       },
-      html: '<p>ThrillerFiend is a React-based web app designed for thriller book enthusiasts. It allows users to discover new books through the Google Books API and stay updated on latest releases via the New York Times API. Readers can manage personal collections, rate books, add notes, and organize their reading experiences. The app also provides author information, a pop culture blog, and an advanced search feature for efficient book discovery.</p>',
+      html: '<p>ThrillerFiend is a web app for thriller fans to discover and track books. It integrates Google Books and NYT APIs for discovery, offers personal notes, ratings, author info, and a reading blog. Built with Firebase and React.</p>',
     },
   },
 
   {
     node: {
       frontmatter: {
-        external: 'https://daviesajayi.netlify.app/',
-        title: 'Portfolio Website',
-        tech: ['React', 'Styled Components', 'Anime.js'],
-        github: 'https://github.com/Davies70/portfolio',
+        external: 'https://shopapocalypse.netlify.app/',
+        title: 'ShopApocalypse',
+        tech: ['React', 'TypeScript', 'Framer Motion', 'gsap'],
+        github: 'https://github.com/Davies70/shopapocalypse',
         cover: Cover4,
         cta: '',
       },
-
-      html: '<p>A responsive and interactive web application developed using React for efficient component-based architecture and dynamic rendering. Styled Components ensures modular and maintainable styling, enabling consistent theming and adaptability. **Anime.js** adds smooth animations, enhancing the user experience. The site is fully responsive, offering seamless functionality and aesthetics across various devices and screen sizes.</p>',
+      html: '<p>ShopApocalypse is a parody eCommerce site for doomsday gear and survival kits. Featuring animated UI with GSAP and Framer Motion, it delivers a quirky, immersive user experience using React and TypeScript.</p>',
     },
   },
 ];
