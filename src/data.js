@@ -43,27 +43,27 @@ export const projects = [
 ];
 
 export const featuredProjects = [
-  {
-    node: {
-      frontmatter: {
-        external: 'https://cheapbites.vercel.app',
-        title: 'CheapBites',
-        tech: [
-          'NextJS',
-          'TypeScript',
-          'Tailwind CSS',
-          'MongoDB',
-          'FourSquare API',
-          'Geolocation API',
-          'Leaflet',
-        ],
-        github: 'https://github.com/Davies70/cheapbites',
-        cover: Cover2,
-        cta: '',
-      },
-      html: '<p>CheapBites helps users find affordable restaurants nearby using FourSquare and the Geolocation API. It features a dynamic Leaflet map, dietary-based suggestions, reviews, and a food quiz. Built with Next.js and secured via NextAuth.</p>',
-    },
-  },
+  // {
+  //   node: {
+  //     frontmatter: {
+  //       external: 'https://cheapbites.vercel.app',
+  //       title: 'CheapBites',
+  //       tech: [
+  //         'NextJS',
+  //         'TypeScript',
+  //         'Tailwind CSS',
+  //         'MongoDB',
+  //         'FourSquare API',
+  //         'Geolocation API',
+  //         'Leaflet',
+  //       ],
+  //       github: 'https://github.com/Davies70/cheapbites',
+  //       cover: Cover2,
+  //       cta: '',
+  //     },
+  //     html: '<p>CheapBites helps users find affordable restaurants nearby using FourSquare and the Geolocation API. It features a dynamic Leaflet map, dietary-based suggestions, reviews, and a food quiz. Built with Next.js and secured via NextAuth.</p>',
+  //   },
+  // },
 
   {
     node: {
