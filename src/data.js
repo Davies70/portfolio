@@ -5,31 +5,12 @@ import Cover4 from './images/shopapo.png';
 export const projects = [
   {
     frontmatter: {
-      github: 'https://github.com/Davies70/q_Books/',
-      external: 'https://fanciful-pastelito-176d7b.netlify.app/',
-      title: 'q_Books',
+      github: 'https://github.com/Davies70/sumbot',
+      external: 'https://sumbot.netlify.app',
+      title: 'Sumbot: AI Text Summarizer',
       tech: ['HTML', 'CSS', 'JavaScript'],
     },
-    html: '<p>q_Books is a lightweight web app that lets users search books in real-time using the Google Books API. Search by title, author, or genre. It also includes a toggleable day/night reading mode for user comfort.</p>',
-  },
-
-  {
-    frontmatter: {
-      github: 'https://github.com/Davies70/patientor_backend',
-      external: 'https://patientorbackend-production.up.railway.app',
-      title: 'Patientor',
-      tech: ['TypeScript', 'React', 'Node.js', 'Express', 'Material UI'],
-    },
-    html: '<p>Patientor is a modern healthcare management platform. It stores patient records securely, displays health summaries, and supports medical history tracking—streamlining care processes for clinics.</p>',
-  },
-
-  {
-    frontmatter: {
-      github: 'https://github.com/Davies70/rate-repository-app/',
-      title: 'Rate My Repository App',
-      tech: ['React Native'],
-    },
-    html: `<p>RateMyRepository is a React Native app for rating and reviewing GitHub repositories. It fetches repo data using GitHub’s API and offers sorting, review analytics, and a polished interface for feedback-driven collaboration.</p>`,
+    html: '<p>A lightweight browser-based text summarization tool that extracts the most important sentences and keywords from a given text. It uses multiple summarization algorithms including frequency-based, simple, keyword-based, and graph-based (PageRank) methods.</p>',
   },
 
   {
@@ -48,15 +29,7 @@ export const featuredProjects = [
       frontmatter: {
         external: 'https://cheapbites.vercel.app',
         title: 'CheapBites',
-        tech: [
-          'NextJS',
-          'TypeScript',
-          'Tailwind CSS',
-          'MongoDB',
-          'FourSquare API',
-          'Geolocation API',
-          'Leaflet',
-        ],
+        tech: ['NextJS', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Leaflet'],
         github: 'https://github.com/Davies70/cheapbites',
         cover: Cover2,
         cta: '',
