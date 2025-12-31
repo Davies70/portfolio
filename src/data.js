@@ -21,6 +21,20 @@ export const projects = [
     },
     html: '<p>Z-Commerce is a sleek fashion e-commerce site built with React and Strapi. Users can browse collections, manage carts, and securely checkout using Stripe. Styled with Sass and fully responsive.</p>',
   },
+  {
+    frontmatter: {
+      github: 'https://github.com/Davies70/inventory-manager',
+      title: 'InventoryManager API',
+      tech: [
+        'AWS Lambda',
+        'API Gateway',
+        'DynamoDB',
+        'Serverless',
+        'GitHub Actions',
+      ],
+    },
+    html: '<p>InventoryManager is a serverless REST API built on AWS, enabling scalable inventory tracking with CRUD operations backed by DynamoDB. It features infrastructure as code, secure IAM-based access, and automated CI/CD deployments using GitHub Actions.</p>',
+  },
 ];
 
 export const featuredProjects = [
