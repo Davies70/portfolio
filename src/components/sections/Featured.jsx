@@ -308,7 +308,7 @@ const Featured = () => {
   useEffect(() => {
     sr.reveal(revealTitle.current, config.srConfig());
     revealProjects.current.forEach((ref, i) =>
-      sr.reveal(ref, config.srConfig(i * 100))
+      sr.reveal(ref, config.srConfig(i * 100)),
     );
   }, []);
 
@@ -319,7 +319,7 @@ const Featured = () => {
       </h2>
 
       <StyledProjectsGrid>
-        {featuredProjects.map(({ node }, i) => {
+        {featuredProjects.map((node, i) => {
           const { frontmatter, html } = node;
           const { external, title, tech, github, cover, cta } = frontmatter;
 

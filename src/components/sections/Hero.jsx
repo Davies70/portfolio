@@ -37,7 +37,7 @@ const StyledHeroSection = styled.section`
 
   p {
     margin: 20px 0 0;
-    max-width: 540px;
+    max-width: 560px;
   }
 
   .email-link {
@@ -56,23 +56,27 @@ const Hero = () => {
 
   const one = <h1>Hello, my name is</h1>;
   const two = <h2 className='big-heading'>Davies Ajayi.</h2>;
-  const three = <h3 className='big-heading'>I create functional web apps.</h3>;
+  const three = (
+    <h3 className='big-heading'>
+      I build full-stack web applications and cloud-native systems.
+    </h3>
+  );
   const four = (
-    <>
-      <p>
-        I build products that I would actually use. Currently, I’m focused on
-        fullstack applications with seamless user experience.{' '}
-      </p>
-    </>
+    <p>
+      I design and develop products with a strong focus on performance,
+      scalability, and real-world usability. My work spans modern frontend
+      frameworks and cloud-based backend systems using AWS, serverless
+      architectures, and event-driven workflows.
+    </p>
   );
   const five = (
     <a
       className='email-link'
-      href='https://shopapocalypse.netlify.app/'
+      href='https://secure-file-processing-ui.vercel.app/'
       target='_blank'
       rel='noreferrer'
     >
-      Check out my latest project: ShopApocalypse!
+      View my latest project: Secure File Processing Pipeline
     </a>
   );
 
