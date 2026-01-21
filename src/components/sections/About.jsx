@@ -17,14 +17,14 @@ const StyledAboutSection = styled.section`
     }
   }
 `;
+
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
+    grid-template-columns: repeat(2, minmax(160px, 220px));
+    grid-gap: 0 12px;
     padding: 0;
     margin: 20px 0 0 0;
-    overflow: hidden;
     list-style: none;
 
     li {
@@ -45,6 +45,7 @@ const StyledText = styled.div`
     }
   }
 `;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -56,15 +57,11 @@ const StyledPic = styled.div`
 
   .wrapper {
     ${({ theme }) => theme.mixins.boxShadow};
-    display: block;
     position: relative;
-    width: 100%;
     border-radius: var(--border-radius);
     background-color: var(--green);
 
-    &:hover,
-    &:focus {
-      outline: 0;
+    &:hover {
       transform: translate(-4px, -4px);
 
       &:after {
@@ -78,7 +75,6 @@ const StyledPic = styled.div`
     }
 
     .img {
-      position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1);
@@ -88,7 +84,6 @@ const StyledPic = styled.div`
     &:before,
     &:after {
       content: '';
-      display: block;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -97,8 +92,6 @@ const StyledPic = styled.div`
     }
 
     &:before {
-      top: 0;
-      left: 0;
       background-color: var(--navy);
       mix-blend-mode: screen;
     }
@@ -122,12 +115,12 @@ const About = () => {
   const skills = [
     'JavaScript (ES6+)',
     'TypeScript',
+    'React / Next.js',
     'Node.js',
-    'Next.js',
-    'Python',
     'Express',
-    'React',
-    'React Native',
+    'AWS (Lambda, S3)',
+    'Serverless APIs',
+    'MongoDB / DynamoDB',
   ];
 
   return (
@@ -138,32 +131,52 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              My interest in web development started back in 2017, from building
-              simple websites to complex fullstack applications.
+              I’m a full-stack software engineer who enjoys building practical,
+              production-ready applications. My journey into web development
+              started with simple interfaces, but quickly grew into designing
+              complete systems that span frontend, backend, and cloud
+              infrastructure.
             </p>
 
             <p>
-              I’ve honed my skills and crafted a range of web applications that
-              I frequently utilize.
+              Today, I focus on building scalable web applications using modern
+              JavaScript frameworks on the frontend and cloud-native, serverless
+              architectures on the backend. I enjoy solving problems around
+              performance, data flow, and real-world constraints.
             </p>
 
             <p>
-              I also recently made{' '}
-              <a href='https://cheapbites.vercel.app'>a web app</a> designed to
-              help food lovers find budget-friendly dining options nearby.
+              One example is{' '}
+              <a
+                href='https://cheapbites.vercel.app'
+                target='_blank'
+                rel='noreferrer'
+              >
+                CheapBites
+              </a>
+              , a location-based web app that helps users discover affordable
+              dining options nearby, combining external APIs, maps, and
+              authentication into a cohesive product.
             </p>
 
-            <p>A few technologies I’ve been working with recently:</p>
+            <p>Technologies I’ve been working with recently:</p>
           </div>
 
           <ul className='skills-list'>
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            {skills.map((skill, i) => (
+              <li key={i}>{skill}</li>
+            ))}
           </ul>
         </StyledText>
 
         <StyledPic>
           <div className='wrapper'>
-            <img src={me} width={500} className='img' alt='Headshot' />
+            <img
+              src={me}
+              width={500}
+              className='img'
+              alt='Davies Ajayi headshot'
+            />
           </div>
         </StyledPic>
       </div>
