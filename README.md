@@ -8,14 +8,14 @@ Welcome to the portfolio website of **Davies Ajayi**, a full-stack developer pas
 
 ## Table of Contents
 
-- [Overview](#overview)  
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Deployment](#deployment)  
-- [Contributing](#contributing)  
-- [License](#license)  
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
@@ -23,10 +23,10 @@ Welcome to the portfolio website of **Davies Ajayi**, a full-stack developer pas
 
 This portfolio site serves as both a **personal brand platform** and a **project showcase**, highlighting:
 
-- Interactive UI components with **animations and scroll effects**  
-- Navigation between projects and sections using **React Router**  
-- SEO-friendly metadata management with **React Helmet Async**  
-- Demonstration of frontend best practices, styling techniques, and responsive design  
+- Interactive UI components with **animations and scroll effects**
+- Navigation between projects and sections using **React Router**
+- SEO-friendly metadata management with **React Helmet Async**
+- Demonstration of frontend best practices, styling techniques, and responsive design
 
 It is built with **React** and **Vite**, emphasizing **fast load times** and **modern development workflows**.
 
@@ -34,12 +34,12 @@ It is built with **React** and **Vite**, emphasizing **fast load times** and **m
 
 ## Features
 
-- **Interactive Homepage:** Smooth transitions and animated elements using `animejs` and `scrollreveal`  
-- **Project Showcase:** Organized sections for portfolio projects with images, descriptions, and live links  
-- **Responsive Design:** Fully optimized for mobile, tablet, and desktop screens using `styled-components` and `@emotion/styled`  
-- **Routing & Navigation:** Seamless page transitions with `react-router-dom` and `react-transition-group`  
-- **SEO Optimization:** Metadata management using `react-helmet-async`  
-- **Code Quality:** ESLint and Babel integration ensure consistent, maintainable code  
+- **Interactive Homepage:** Smooth transitions and animated elements using `animejs` and `scrollreveal`
+- **Project Showcase:** Organized sections for portfolio projects with images, descriptions, and live links
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop screens using `styled-components` and `@emotion/styled`
+- **Routing & Navigation:** Seamless page transitions with `react-router-dom` and `react-transition-group`
+- **SEO Optimization:** Metadata management using `react-helmet-async`
+- **Code Quality:** ESLint and Babel integration ensure consistent, maintainable code
 
 ---
 
@@ -47,20 +47,20 @@ It is built with **React** and **Vite**, emphasizing **fast load times** and **m
 
 **Frontend:**
 
-- React 18  
-- React Router DOM 6  
-- React Transition Group  
-- Styled Components & Emotion  
-- Anime.js & ScrollReveal for animations  
-- React Helmet Async for SEO  
+- React 18
+- React Router DOM 6
+- React Transition Group
+- Styled Components & Emotion
+- Anime.js & ScrollReveal for animations
+- React Helmet Async for SEO
 
 **Build & Tooling:**
 
-- Vite for fast development and optimized builds  
-- Babel for JS & React transpilation  
-- ESLint for linting and code quality  
-- Webpack for optional advanced bundling  
-- Nodemon for development automation  
+- Vite for fast development and optimized builds
+- Babel for JS & React transpilation
+- ESLint for linting and code quality
+- Webpack for optional advanced bundling
+- Nodemon for development automation
 
 ---
 
@@ -75,3 +75,4 @@ cd portfolio
 
 # Install dependencies
 npm install
+```
