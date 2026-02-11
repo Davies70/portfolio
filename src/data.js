@@ -2,8 +2,37 @@ import Cover1 from './images/ThrillerFiend2.png';
 import Cover2 from './images/cheapbites1.png';
 import Cover4 from './images/shopapo.png';
 import CoverSecure from './images/secure-file-processing.png';
+import CoverDocuGuard from './images/docuguard.png';
 
 export const projects = [
+  {
+    frontmatter: {
+      external: 'https://thrillerfiend.netlify.app',
+      title: 'ThrillerFiend',
+      tech: [
+        'React',
+        'Material UI',
+        'Firebase',
+        'Firestore',
+        'Google Books API',
+        'New York Times API',
+      ],
+      github: 'https://github.com/Davies70/ThrillerFiend',
+      cover: Cover1,
+      cta: '',
+    },
+    html: `
+      <p>
+        ThrillerFiend is a discovery and tracking platform for thriller and crime fiction fans.
+        It integrates the Google Books and New York Times APIs to surface trending titles,
+        author information, and curated recommendations.
+      </p>
+      <p>
+        Users can rate books, save personal notes, and follow a reading blog, with all data
+        persisted using Firebase and Firestore.
+      </p>
+    `,
+  },
   {
     frontmatter: {
       github: 'https://github.com/Davies70/sumbot',
@@ -63,6 +92,37 @@ export const projects = [
 ];
 
 export const featuredProjects = [
+  {
+    frontmatter: {
+      title: 'DocuGuard',
+      external: 'https://docu-guard-self-healing-rag.vercel.app/',
+      github: 'https://github.com/Davies70/DocuGuard-Self-Healing-RAG',
+      tech: [
+        'Next.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'FastAPI',
+        'Python',
+        'LangChain',
+        'Groq / Llama 3',
+        'Docker',
+        'FAISS',
+      ],
+      cover: CoverDocuGuard,
+      cta: 'Run Audit',
+    },
+    html: `
+      <p>
+        DocuGuard is an automated RAG system that audits technical documentation against 
+        changelogs to detect and "self-heal" breaking changes.
+      </p>
+      <p>
+        Built with <strong>Next.js</strong> and <strong>FastAPI</strong>, it leverages 
+        Groq/Llama 3 and FAISS vector search to identify contradictions and generate 
+        specific remediation steps for outdated docs.
+      </p>
+    `,
+  },
   {
     frontmatter: {
       title: 'Secure File Processing Pipeline',
@@ -134,34 +194,6 @@ export const featuredProjects = [
       <p>
         Built with Next.js and TypeScript, the platform focuses on performance, responsive design,
         and secure authentication via NextAuth.
-      </p>
-    `,
-  },
-  {
-    frontmatter: {
-      external: 'https://thrillerfiend.netlify.app',
-      title: 'ThrillerFiend',
-      tech: [
-        'React',
-        'Material UI',
-        'Firebase',
-        'Firestore',
-        'Google Books API',
-        'New York Times API',
-      ],
-      github: 'https://github.com/Davies70/ThrillerFiend',
-      cover: Cover1,
-      cta: '',
-    },
-    html: `
-      <p>
-        ThrillerFiend is a discovery and tracking platform for thriller and crime fiction fans.
-        It integrates the Google Books and New York Times APIs to surface trending titles,
-        author information, and curated recommendations.
-      </p>
-      <p>
-        Users can rate books, save personal notes, and follow a reading blog, with all data
-        persisted using Firebase and Firestore.
       </p>
     `,
   },
